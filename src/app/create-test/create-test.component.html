@@ -1,0 +1,62 @@
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <div class="col-sm-3">
+            <h4>Create Test</h4>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-11">
+                        <select class="col-sm-11 custom-select">
+                            <option selected>Select Entity</option>
+                            <option value="1">Primary Spoken Language</option>
+                            <option value="2">Secondary Spoken Language</option>
+                            <option value="3">Gender</option>
+                            <option value="4">Birthday</option>
+                            <option value="5">Business Center</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-11">
+                        <select class="col-sm-11 custom-select">
+                            <option selected>Select Value</option>
+                            <option value="1">English</option>
+                            <option value="2">Spanish</option>
+                            <option value="3">Cantonese</option>
+                            <option value="4">Mandarin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="name"></label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name of Test">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="jira-number"></label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="jira-number" placeholder="Enter Jira Number">
+                    </div>
+                </div>
+                <div  class="form-group">
+                    <div class="col-sm-offset-5 col-sm-2">
+                        <button (click)="loginUser()" type="submit" class="btn btn-default">Save</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="media">
+                <div class="media-right">
+                    <img src="../../graph02.png" class="media-object" style="width:560px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

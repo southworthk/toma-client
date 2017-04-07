@@ -1,0 +1,81 @@
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-2">
+            &nbsp;
+        </div>
+        <div class="col-sm-3">
+            <h4>Create Entity</h4>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-11">
+                        <select class="col-sm-11 custom-select">
+                            <option selected>Entity Type</option>
+                            <option value="1">Base URL</option>
+                            <option value="2">Button</option>
+                            <option value="3">Form</option>
+                            <option value="4">Hyperlink</option>
+                            <option value="5">Info Popup</option>
+                            <option value="6">Input Element</option>
+                            <option value="7">Page</option>
+                            <option value="8">Select List</option>
+                            <option value="9">Sidebar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-11">
+                        <select class="col-sm-11 custom-select">
+                            <option selected>Parent Entity</option>
+                            <option value="1">BCI Form</option>
+                            <option value="2">Login Form</option>
+                            <option value="3">Order Entry Start Form</option>
+                            <option value="4">Hub Left Sidebar</option>
+                            <option value="5">Main Hub URL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-11">
+                        <select class="col-sm-11 custom-select">
+                            <option selected>Relationship</option>
+                            <option value="1">Contains</option>
+                            <option value="2">Launches</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="name"></label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name for Element">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="tag_id"></label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="tag_id" placeholder="Enter Tag ID">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-1" for="value"></label>
+                    <div class="col-sm-11">
+                        <input type="text" class="form-control" id="value" placeholder="Enter Value" [value]="val">
+                    </div>
+                </div>
+                <div  class="form-group">
+                    <div class="col-sm-offset-5 col-sm-2">
+                        <button (click)="createEntity()" type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="media">
+                <div class="media-right">
+                    <img [src]="graphImage" class="media-object" style="width:560px" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
