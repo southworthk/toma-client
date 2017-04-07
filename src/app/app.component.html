@@ -12,9 +12,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">PRODUCT FEATURES</a></li>
                 <li><a href="#services">MAIN MENU</a></li>
-                <div *ngIf="isLoggedIn" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <li><a (click)="logout()">Logout</a></li>
-                </div>
+                <li><a href="#firebase">TEST RESULTS</a></li>
+                <li *ngIf="isLoggedIn"><a (click)="logout()">LOGOUT</a></li>
             </ul>
         </div>
     </div>
